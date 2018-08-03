@@ -44,4 +44,16 @@ self.addEventListener('fetch',function(event){
 });
 
 
+self.addEventListener('push',function(event){
+   console.log('Push Notification Recieved',event);
+   if(Notification.permission=='granted'){
+   event.waitUntil(
+   self.resistration.showNotification('受信しました').then(function(showEvent){
+    console.log('Notification showed',showEvent)
+    },fucntion(error){
+      cosole.log(error);
+    })
+    );
+   }
+});
 
