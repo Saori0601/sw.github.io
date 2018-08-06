@@ -17,14 +17,8 @@
    }
 
    Notification.requestPermission(function(status){
-   console.log('Notification permission requested:',status);
+   console.log('通知の許可:',status);
    })
-
-self.addEventListener('notificationclick',function(event){
-    console.log('Notification Clicked.',event.notification.tag);
-     event.notification.close();
-       $(".fukidashi").text(serif[7]);
-});
 
    function msg02(){
    $(".fukidashi").text(serif[7]);

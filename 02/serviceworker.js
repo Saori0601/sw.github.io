@@ -49,7 +49,6 @@ self.addEventListener('push',function(event){
    if(Notification.permission=='granted'){
    event.waitUntil(
    self.registration.showNotification('受信しました').then(function(showEvent){//プッシュ通知に表示するメッセージ
-    console.log('Notification Showed',showEvent)
     }, function(error){
       cosole.log(error);
     })
