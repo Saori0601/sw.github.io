@@ -4,6 +4,7 @@ var cacheName = 'manekineko';
 //キャッシュしたいファイルのリストを登録する
 var filesToCache = [
    'index.html',
+   'main.js',
    'jquery.js',
    'style.css',
 ];
@@ -35,6 +36,9 @@ self.addEventListener('activate',function(event){
 
 //
 self.addEventListener('fetch',function(event){
+  if (event.request.cache === 'only-if-cached' && event.request.mode !== 'same-origin') {
+    return;
+    }
     event.respondWith(
      caches.match(event.request).then(function(response){
      return response || fetch(event.request);
