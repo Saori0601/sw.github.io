@@ -3,6 +3,7 @@ var cacheName = 'manekineko';
 
 //キャッシュしたいファイルのリストを登録する
 var filesToCache = [
+   '/',
    'index.html',
    'main.js',
    'jquery.js',
