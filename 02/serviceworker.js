@@ -48,12 +48,18 @@ self.addEventListener('push',function(event){
    console.log('Push Notification Recieved',event);
    if(Notification.permission=='granted'){
    event.waitUntil(
-   self.resistration.showNotification('受信しました').then(function(showEvent){
-    console.log('Notification showed',showEvent)
-    },fucntion(error){
+   self.registration.showNotification('受信しました').then(function(showEvent){
+    console.log('Notification Showed',showEvent)
+    }, function(error){
       cosole.log(error);
     })
     );
    }
+});
+
+self.addEventListener('notificationclick',function(event){
+    console.log('Notification Clicked.',event.notification.tag);
+     event.notification.close();
+
 });
 

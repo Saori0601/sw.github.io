@@ -2,11 +2,13 @@
   "lang": "ja",
   "name": "Manekineko",
   "short_name": "manekicat",
-  "icons": [{
+  "icons": [
+    {
         "src": "iconV2.png",
         "sizes": "61x60",
         "type": "image/png"
-      }],
-  "start_url": "https://watanabe0601.github.io/sw.github.io/index.html",
+    }
+  ],
+  "start_url": "https://manaba.jp/doc/test/push_test/02/",
   "display": "standalone"
 }
