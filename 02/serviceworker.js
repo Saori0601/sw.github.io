@@ -64,4 +64,7 @@ self.addEventListener("push", function(event) {
 
 self.addEventListener("notificationclick", function(event) {
   event.notification.close();
+  event.waitUntil(
+    clients.openWindow('https://watanabe0601.github.io/sw.github.io/02/')
+  );
 });
