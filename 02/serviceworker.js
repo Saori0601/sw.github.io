@@ -48,7 +48,10 @@ self.addEventListener("push", function(event) {
   console.log("Push Notification Recieved", event);
   if (Notification.permission == "granted") {
     event.waitUntil(
-      self.registration.showNotification("受信しました").then(
+      self.registration.showNotification("受信しました",{
+           body:"本文",
+           icon:"iconV2.png"
+          }).then(
         function(showEvent) {
         },
         function(error) {
