@@ -15,6 +15,21 @@ function msg() {
   $(".fukidashi").text(serif[a + 1]);
 }
 
+
+
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBOqfq_foJNdYL5qN_6pDvjyQluX1Z5Jd0",
+    authDomain: "test-push-ba4ef.firebaseapp.com",
+    databaseURL: "https://test-push-ba4ef.firebaseio.com",
+    projectId: "test-push-ba4ef",
+    storageBucket: "test-push-ba4ef.appspot.com",
+    messagingSenderId: "911358547114"
+  };
+  firebase.initializeApp(config);
+
+
+
   const messaging = firebase.messaging();
 
 messaging.requestPermission().then(function() {
