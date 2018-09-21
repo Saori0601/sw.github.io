@@ -16,5 +16,10 @@ function msg() {
 }
 
 Notification.requestPermission(function(status) {
+
+token = Notification.getToken();
+document.getElementById("txtIIToken").value = token;
+ 
+
   console.log("通知の許可:", status);
 });
