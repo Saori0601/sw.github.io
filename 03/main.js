@@ -34,7 +34,7 @@ function msg() {
 const messaging = firebase.messaging();
 
 
-
+  function requestPermission() {
     console.log('Requesting permission...');
     // [START request_permission]
     messaging.requestPermission().then(function() {
@@ -49,6 +49,7 @@ const messaging = firebase.messaging();
       console.log('Unable to get permission to notify.', err);
     });
     // [END request_permission]
+  }
 
 
   token=messaging.getToken();
