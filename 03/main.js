@@ -14,13 +14,6 @@ function msg() {
   var a = Math.floor(Math.random() * 6);
   $(".fukidashi").text(serif[a + 1]);
 }
-/*
-Notification.requestPermission(function(status) {
-
-  console.log("通知の許可:", status);
-});
-*/
-
 
   const messaging = firebase.messaging();
 
