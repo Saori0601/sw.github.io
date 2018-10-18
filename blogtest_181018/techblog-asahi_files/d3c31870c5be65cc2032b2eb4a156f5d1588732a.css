@@ -2924,7 +2924,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003894', end
 #blog-title-content #blog-description,
 #blog-title-content #mainImg{position:absolute;margin:0;padding:0;}
 #blog-title-content #title{top:30%;left:5.7%;letter-spacing:0.02em;}
-#blog-title-content #blog-description{top:53.5%;left:5.7%;}
+#blog-title-content #blog-description{top:53.5%;left:5.7%; width: 265px;}
 #blog-title-content #mainImg{top:0;right:-2.7%;width:646px;}
 #blog-title-content #mainImg img{width:100%;}
 
