@@ -2728,6 +2728,101 @@ width: 80%;
 padding:8px 32px 8px 32px;
 }
 }
+
+
+/* CSSカスタマイズ部分
+---------------------------------------------------------- */
+
+
+
+/*---- START | WEB Fonts import ---- */
+/* NotoSans */
+@font-face {
+    font-family: 'notosans-bold';
+    src: url('./font/NotoSansCJKjp-Bold-subset.woff2') format('woff2'),
+         url('./font/NotoSansCJKjp-Bold-subset.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'notosans-regular';
+    src: url('./font/NotoSansCJKjp-Regular-subset.woff2') format('woff2'),
+         url('./font/NotoSansCJKjp-Regular-subset.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'notosans-demilight';
+    src: url('./font/NotoSansCJKjp-DemiLight-subset.woff2') format('woff2'),
+         url('./font/NotoSansCJKjp-DemiLight-subset.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Open Sans */
+@font-face {
+    font-family: 'open-sans-extrabold';
+    src: url('./font/opensans-extrabold-webfont.eot');
+    src: url('./font/opensans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./font/opensans-extrabold-webfont.woff2') format('woff2'),
+         url('./font/opensans-extrabold-webfont.woff') format('woff'),
+         url('./font/opensans-extrabold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'open-sans-bold';
+    src: url('./font/opensans-bold-webfont.eot');
+    src: url('./font/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./font/opensans-bold-webfont.woff2') format('woff2'),
+         url('./font/opensans-bold-webfont.woff') format('woff'),
+         url('./font/opensans-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'open-sans-semibold';
+    src: url('./font/opensans-semibold-webfont.eot');
+    src: url('./font/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./font/opensans-semibold-webfont.woff2') format('woff2'),
+         url('./font/opensans-semibold-webfont.woff') format('woff'),
+         url('./font/opensans-semibold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'open-sans-regular';
+    src: url('./font/opensans-regular-webfont.eot');
+    src: url('./font/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./font/opensans-regular-webfont.woff2') format('woff2'),
+         url('./font/opensans-regular-webfont.woff') format('woff'),
+         url('./font/opensans-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'open-sans-light';
+    src: url('./font/opensans-light-webfont.eot');
+    src: url('./font/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./font/opensans-light-webfont.woff2') format('woff2'),
+         url('./font/opensans-light-webfont.woff') format('woff'),
+         url('./font/opensans-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/*---- END | WEB Fonts import ---- */
+
+
+
+/*text decoration*/
 .entry {
     letter-spacing: normal;
 }
@@ -2743,36 +2838,12 @@ font-weight: bold;
     max-height: 400px;
     overflow: auto;
 }
-
-/*header*/
-
-
-.header-logo{
-   width: 1112px;
-   text-align: left;
-   margin: 0 auto;
-   padding: 15px 30px 10px;
-}
-
-#blog-title{
-   background: url(header_back.png) #003993;
-   height: 300px;
-   padding: 0;
-}
-#blog-title-inner{
-   background: url(main_header.png) no-repeat center center;
-   height: 300px;
-   padding: 0;
-
-}
 #blog-title-inner h1 a{
-   display: block;
-   height: 300px;
+  font-family:notosans-bold;
+  font-weight:normal;
+   color:#fff;
 }
-
-#blog-title-inner h1 a, #blog-title-inner h2{
-    text-indent:-9999px;
-}
+.iBlock{display:inline-block;}
 
 /*Asahinet color*/
 .point:before,
@@ -2783,14 +2854,34 @@ font-weight: bold;
 .entry-header .entry-title a:visited,
 .entry-content h2 ,
 .pager a{
-  color: #053b93;
-
+  color: #003894;
 }
+
+
+/*header*/
+.header-logo{
+    width: 1112px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 15px 15px 10px;
+    position: absolute;
+    top: 0;
+}
+
+#blog-title{
+   margin-top:65px;
+   height: 300px;
+   padding: 0;
+}
+
+#blog-title-inner{
+   height: 300px;
+   padding: 0;
+}
+
 
 #globalheader-container,
-.leave-comment-title {
-  background-color: #053b93;
-}
+.leave-comment-title {background-color: #003894;}
 
 .navi ,
 a.entry-see-more,
@@ -2800,11 +2891,7 @@ a.entry-see-more,
 .pager-prev a:after,
 #footer,
 #footer-inner,
-#copyr 
-{
-background:#053b93;
-
-}
+#copyr{background:#003894;}
 
 .point,.column,.attention,
 .entry-header .entry-title ,
@@ -2815,9 +2902,148 @@ background:#053b93;
 .entry-content .hatena-asin-detail ,
 .hatena-module-title ,
 .page-archive .archive-entry-header .entry-title ,
-.entry-header .entry-title{
-border-color:#053b93;
+.entry-header .entry-title{border-color:#003894;}
+
+
+/*layout*/
+#main,
+#box2{border:none;}
+#box2{padding-top:66px;}
+
+#blog-title{
+background: rgb(0,56,148);
+background: -moz-linear-gradient(left, rgba(0,56,148,1) 50%, rgba(0,56,148,1) 50%, rgba(0,23,64,1) 50%);
+background: -webkit-linear-gradient(left, rgba(0,56,148,1) 50%,rgba(0,56,148,1) 50%,rgba(0,23,64,1) 50%);
+background: linear-gradient(to right, rgba(0,56,148,1) 50%,rgba(0,56,148,1) 50%,rgba(0,23,64,1) 50%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003894', endColorstr='#001740',GradientType=1 );
+}
+#blog-title-inner{position:relative;margin-left:auto;margin-right:auto;}
+/*#blog-title-inner:before{content:"";width:1440px;height:300px;background:url(main_header.png)no-repeat center;background-size:contain;position:absolute;left:50%;margin-left:-720px;top:0;opacity:0.2;}*/
+#blog-title-content{position:relative;text-align:left;color:#fff;font-family:notosans-regular;height:100%;background: url(https://cdn-ak.f.st-hatena.com/images/fotolife/a/asahinet_tech/20181018/20181018104830.png) no-repeat right;background-size: auto auto;background-size: contain;}
+#blog-title-content #title,
+#blog-title-content #blog-description,
+#blog-title-content #mainImg{position:absolute;margin:0;padding:0;}
+#blog-title-content #title{top:30%;left:5.7%;letter-spacing:0.02em;}
+#blog-title-content #blog-description{top:53.5%;left:5.7%;}
+#blog-title-content #mainImg{top:0;right:-2.7%;width:646px;}
+#blog-title-content #mainImg img{width:100%;}
+
+/*media queries commons*/
+@media screen and (max-width: 767px){
+
+  /*header*/
+  .header-logo{
+     width: 118px;
+     margin:0;
+  }
+  .header-logo img{width:100%;}
+
+  #container-inner,
+  #blog-title{margin: 50px 0 0 0 ;padding:0;}
+  #blog-title-inner{
+    background: rgb(0,56,148);
+    background: -moz-linear-gradient(-45deg, rgba(0,56,148,1) 20%, rgba(0,23,64,1) 80%);
+    background: -webkit-linear-gradient(-45deg, rgba(0,56,148,1) 20%,rgba(0,23,64,1) 80%);
+    background: linear-gradient(135deg, rgba(0,56,148,1) 20%,rgba(0,23,64,1) 80%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003894', endColorstr='#001740',GradientType=1 );
+  }
+
+}@media print,screen and (min-width:768px) and (max-width:1079px){
+
+  #blog-title-inner{
+    background: rgb(0,56,148);
+    background: -moz-linear-gradient(-45deg, rgba(0,56,148,1) 27%, rgba(0,23,64,1) 73%);
+    background: -webkit-linear-gradient(-45deg, rgba(0,56,148,1) 27%,rgba(0,23,64,1) 73%);
+    background: linear-gradient(135deg, rgba(0,56,148,1) 27%,rgba(0,23,64,1) 73%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003894', endColorstr='#001740',GradientType=1 );
+  }
+
+}@media print,screen and (min-width:1080px) {
+
+  #blog-title-inner{
+    background: rgb(0,56,148);
+    background: -moz-linear-gradient(-45deg, rgba(0,56,148,1) 20%, rgba(0,23,64,1) 80%);
+    background: -webkit-linear-gradient(-45deg, rgba(0,56,148,1) 20%,rgba(0,23,64,1) 80%);
+    background: linear-gradient(135deg, rgba(0,56,148,1) 20%,rgba(0,23,64,1) 80%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003894', endColorstr='#001740',GradientType=1 );
+  }
+
 }
 
 
-/* </system> */
+/*media queries layout*/
+@media screen and (max-width: 479px){
+
+  #blog-title,
+  #blog-title-inner{height:95px;}
+  #blog-title-inner{width:100%;}
+  #blog-title-content #title{font-size:15px;width:35%;top:11%;left:2.7%;letter-spacing:0;}
+  #blog-title-content #blog-description{font-size:8px;top:61%;left:2.7%;letter-spacing:-0.02em;}
+  #blog-title-content #mainImg{top:0;right:-36px;width:204px;}
+
+}@media print,screen and (min-width:480px) and (max-width:499px){
+
+  #blog-title,
+  #blog-title-inner{height:130px;}
+  #blog-title-inner{width:100%;}
+  #blog-title-content #title{font-size:19px;width:35%;top:15%;left:2.7%;letter-spacing:0;}
+  #blog-title-content #blog-description{font-size:10px;top:61%;left:2.7%;}
+  #blog-title-content #mainImg{top:0;right:-12px;width:280px;}
+
+}@media print,screen and (min-width:500px) and (max-width:579px){
+
+  #blog-title,
+  #blog-title-inner{height:140px;}
+  #blog-title-inner{width:100%;}
+  #blog-title-content #title{font-size:20px;width:35%;top:16%;left:2.7%;letter-spacing:0;}
+  #blog-title-content #blog-description{font-size:10px;top:61%;left:2.7%;}
+  #blog-title-content #mainImg{top:0;right:-12px;width:302px;}
+
+}@media print,screen and (min-width:580px) and (max-width:669px){
+
+  #blog-title,
+  #blog-title-inner{height:180px;}
+  #blog-title-inner{width:100%;}
+  #blog-title-content #title{font-size:24px;width:35%;top:18%;left:2.7%;letter-spacing:0;}
+  #blog-title-content #blog-description{font-size: 10px;top:63%;left:2.7%;}
+  #blog-title-content #mainImg{top:0;right:-16px;width:388px;}
+
+}@media print,screen and (min-width:670px) and (max-width:719px){
+
+  #blog-title,
+  #blog-title-inner{height:200px;}
+  #blog-title-inner{width:100%;}
+  #blog-title-content #title{font-size:26px;width:35%;top:17%;left:2.7%;letter-spacing:0;}
+  #blog-title-content #blog-description{font-size: 11px;top:62%;left:2.7%;}
+  #blog-title-content #mainImg{top:0;right:-18px;width:432px;}
+
+}@media print,screen and (min-width:720px) and (max-width:767px){
+
+  #blog-title,
+  #blog-title-inner{height:222px;}
+  #blog-title-inner{width:100%;}
+  #blog-title-content #title{font-size:28px;width:35%;top:18%;left:2.7%;letter-spacing:0;}
+  #blog-title-content #blog-description{font-size: 12px;top:62%;left:2.7%;}
+  #blog-title-content #mainImg{top:0;right:-20px;width:480px;}
+
+}@media print,screen and (min-width:768px) and (max-width:1079px){
+
+  #blog-title,
+  #blog-title-inner{height:222px;}
+  #blog-title-inner{width:724px;}
+  #blog-title-content #title{font-size:28px;left:2.7%;top:18%;letter-spacing:0;width:35%;}
+  #blog-title-content #blog-description{font-size: 12px;top:63%;left:2.7%;}
+  #blog-title-content #mainImg{top:0;right:-30px;width:480px;}
+
+}@media print,screen and (min-width:1080px) and (max-width:1170px){
+
+  #blog-title-inner{width:1030px;}
+  #blog-title-content #title{left:1.5%;letter-spacing:0;}
+  #blog-title-content #blog-description{left:1.5%;}
+
+}@media print,screen and (min-width: 1171px){
+
+  #blog-title-inner{width:1112px;}
+
+}
+
