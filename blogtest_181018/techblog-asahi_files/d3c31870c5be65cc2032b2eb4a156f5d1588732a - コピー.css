@@ -2739,24 +2739,24 @@ padding:8px 32px 8px 32px;
 /* NotoSans */
 @font-face {
     font-family: 'notosans-bold';
-    src: url('https://asahi-net.co.jp/commons/font/lib/NotoSansCJKjp-Bold-subset.woff2') format('woff2'),
-         url('https://asahi-net.co.jp/commons/font/lib/NotoSansCJKjp-Bold-subset.woff') format('woff');
+    src: url('./font/NotoSansCJKjp-Bold-subset.woff2') format('woff2'),
+         url('./font/NotoSansCJKjp-Bold-subset.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'notosans-regular';
-    src: url('https://asahi-net.co.jp/commons/font/lib/NotoSansCJKjp-Regular-subset.woff2') format('woff2'),
-         url('https://asahi-net.co.jp/commons/font/lib/NotoSansCJKjp-Regular-subset.woff') format('woff');
+    src: url('./font/NotoSansCJKjp-Regular-subset.woff2') format('woff2'),
+         url('./font/NotoSansCJKjp-Regular-subset.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'notosans-demilight';
-    src: url('https://asahi-net.co.jp/commons/font/lib/NotoSansCJKjp-DemiLight-subset.woff2') format('woff2'),
-         url('https://asahi-net.co.jp/commons/font/lib/NotoSansCJKjp-DemiLight-subset.woff') format('woff');
+    src: url('./font/NotoSansCJKjp-DemiLight-subset.woff2') format('woff2'),
+         url('./font/NotoSansCJKjp-DemiLight-subset.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -2765,55 +2765,55 @@ padding:8px 32px 8px 32px;
 /* Open Sans */
 @font-face {
     font-family: 'open-sans-extrabold';
-    src: url('https://asahi-net.co.jp/commons/font/lib/opensans-extrabold-webfont.eot');
-    src: url('https://asahi-net.co.jp/commons/font/lib/opensans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('https://asahi-net.co.jp/commons/font/lib/opensans-extrabold-webfont.woff2') format('woff2'),
-         url('https://asahi-net.co.jp/commons/font/lib/opensans-extrabold-webfont.woff') format('woff'),
-         url('https://asahi-net.co.jp/commons/font/lib/opensans-extrabold-webfont.ttf') format('truetype');
+    src: url('./font/opensans-extrabold-webfont.eot');
+    src: url('./font/opensans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./font/opensans-extrabold-webfont.woff2') format('woff2'),
+         url('./font/opensans-extrabold-webfont.woff') format('woff'),
+         url('./font/opensans-extrabold-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'open-sans-bold';
-    src: url('https://asahi-net.co.jp/commons/font/lib/opensans-bold-webfont.eot');
-    src: url('https://asahi-net.co.jp/commons/font/lib/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('https://asahi-net.co.jp/commons/font/lib/opensans-bold-webfont.woff2') format('woff2'),
-         url('https://asahi-net.co.jp/commons/font/lib/opensans-bold-webfont.woff') format('woff'),
-         url('https://asahi-net.co.jp/commons/font/lib/opensans-bold-webfont.ttf') format('truetype');
+    src: url('./font/opensans-bold-webfont.eot');
+    src: url('./font/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./font/opensans-bold-webfont.woff2') format('woff2'),
+         url('./font/opensans-bold-webfont.woff') format('woff'),
+         url('./font/opensans-bold-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'open-sans-semibold';
-    src: url('https://asahi-net.co.jp/commons/font/lib/opensans-semibold-webfont.eot');
-    src: url('https://asahi-net.co.jp/commons/font/lib/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('https://asahi-net.co.jp/commons/font/lib/opensans-semibold-webfont.woff2') format('woff2'),
-         url('https://asahi-net.co.jp/commons/font/lib/opensans-semibold-webfont.woff') format('woff'),
-         url('https://asahi-net.co.jp/commons/font/lib/opensans-semibold-webfont.ttf') format('truetype');
+    src: url('./font/opensans-semibold-webfont.eot');
+    src: url('./font/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./font/opensans-semibold-webfont.woff2') format('woff2'),
+         url('./font/opensans-semibold-webfont.woff') format('woff'),
+         url('./font/opensans-semibold-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'open-sans-regular';
-    src: url('https://asahi-net.co.jp/commons/font/lib/opensans-regular-webfont.eot');
-    src: url('https://asahi-net.co.jp/commons/font/lib/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('https://asahi-net.co.jp/commons/font/lib/opensans-regular-webfont.woff2') format('woff2'),
-         url('https://asahi-net.co.jp/commons/font/lib/opensans-regular-webfont.woff') format('woff'),
-         url('https://asahi-net.co.jp/commons/font/lib/opensans-regular-webfont.ttf') format('truetype');
+    src: url('./font/opensans-regular-webfont.eot');
+    src: url('./font/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./font/opensans-regular-webfont.woff2') format('woff2'),
+         url('./font/opensans-regular-webfont.woff') format('woff'),
+         url('./font/opensans-regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'open-sans-light';
-    src: url('https://asahi-net.co.jp/commons/font/lib/opensans-light-webfont.eot');
-    src: url('https://asahi-net.co.jp/commons/font/lib/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('https://asahi-net.co.jp/commons/font/lib/opensans-light-webfont.woff2') format('woff2'),
-         url('https://asahi-net.co.jp/commons/font/lib/opensans-light-webfont.woff') format('woff'),
-         url('https://asahi-net.co.jp/commons/font/lib/opensans-light-webfont.ttf') format('truetype');
+    src: url('./font/opensans-light-webfont.eot');
+    src: url('./font/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./font/opensans-light-webfont.woff2') format('woff2'),
+         url('./font/opensans-light-webfont.woff') format('woff'),
+         url('./font/opensans-light-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
