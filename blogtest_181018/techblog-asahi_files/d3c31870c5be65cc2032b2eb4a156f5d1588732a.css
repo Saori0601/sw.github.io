@@ -2735,89 +2735,6 @@ padding:8px 32px 8px 32px;
 
 
 
-/*---- START | WEB Fonts import ---- */
-/* NotoSans */
-@font-face {
-    font-family: 'notosans-bold';
-    src: url('https://asahi-net.co.jp/commons/font/lib/NotoSansCJKjp-Bold-subset.woff2') format('woff2'),
-         url('https://asahi-net.co.jp/commons/font/lib/NotoSansCJKjp-Bold-subset.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'notosans-regular';
-    src: url('https://asahi-net.co.jp/commons/font/lib/NotoSansCJKjp-Regular-subset.woff2') format('woff2'),
-         url('https://asahi-net.co.jp/commons/font/lib/NotoSansCJKjp-Regular-subset.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'notosans-demilight';
-    src: url('https://asahi-net.co.jp/commons/font/lib/NotoSansCJKjp-DemiLight-subset.woff2') format('woff2'),
-         url('https://asahi-net.co.jp/commons/font/lib/NotoSansCJKjp-DemiLight-subset.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-/* Open Sans */
-@font-face {
-    font-family: 'open-sans-extrabold';
-    src: url('https://asahi-net.co.jp/commons/font/lib/opensans-extrabold-webfont.eot');
-    src: url('https://asahi-net.co.jp/commons/font/lib/opensans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('https://asahi-net.co.jp/commons/font/lib/opensans-extrabold-webfont.woff2') format('woff2'),
-         url('https://asahi-net.co.jp/commons/font/lib/opensans-extrabold-webfont.woff') format('woff'),
-         url('https://asahi-net.co.jp/commons/font/lib/opensans-extrabold-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'open-sans-bold';
-    src: url('https://asahi-net.co.jp/commons/font/lib/opensans-bold-webfont.eot');
-    src: url('https://asahi-net.co.jp/commons/font/lib/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('https://asahi-net.co.jp/commons/font/lib/opensans-bold-webfont.woff2') format('woff2'),
-         url('https://asahi-net.co.jp/commons/font/lib/opensans-bold-webfont.woff') format('woff'),
-         url('https://asahi-net.co.jp/commons/font/lib/opensans-bold-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'open-sans-semibold';
-    src: url('https://asahi-net.co.jp/commons/font/lib/opensans-semibold-webfont.eot');
-    src: url('https://asahi-net.co.jp/commons/font/lib/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('https://asahi-net.co.jp/commons/font/lib/opensans-semibold-webfont.woff2') format('woff2'),
-         url('https://asahi-net.co.jp/commons/font/lib/opensans-semibold-webfont.woff') format('woff'),
-         url('https://asahi-net.co.jp/commons/font/lib/opensans-semibold-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'open-sans-regular';
-    src: url('https://asahi-net.co.jp/commons/font/lib/opensans-regular-webfont.eot');
-    src: url('https://asahi-net.co.jp/commons/font/lib/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('https://asahi-net.co.jp/commons/font/lib/opensans-regular-webfont.woff2') format('woff2'),
-         url('https://asahi-net.co.jp/commons/font/lib/opensans-regular-webfont.woff') format('woff'),
-         url('https://asahi-net.co.jp/commons/font/lib/opensans-regular-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'open-sans-light';
-    src: url('https://asahi-net.co.jp/commons/font/lib/opensans-light-webfont.eot');
-    src: url('https://asahi-net.co.jp/commons/font/lib/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('https://asahi-net.co.jp/commons/font/lib/opensans-light-webfont.woff2') format('woff2'),
-         url('https://asahi-net.co.jp/commons/font/lib/opensans-light-webfont.woff') format('woff'),
-         url('https://asahi-net.co.jp/commons/font/lib/opensans-light-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 /*---- END | WEB Fonts import ---- */
 
 
@@ -2839,8 +2756,8 @@ font-weight: bold;
     overflow: auto;
 }
 #blog-title-inner h1 a{
-  font-family:notosans-bold;
-  font-weight:normal;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight:bold;
    color:#fff;
 }
 .iBlock{display:inline-block;}
@@ -2919,12 +2836,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003894', end
 }
 #blog-title-inner{position:relative;margin-left:auto;margin-right:auto;}
 /*#blog-title-inner:before{content:"";width:1440px;height:300px;background:url(main_header.png)no-repeat center;background-size:contain;position:absolute;left:50%;margin-left:-720px;top:0;opacity:0.2;}*/
-#blog-title-content{position:relative;text-align:left;color:#fff;font-family:notosans-regular;height:100%;background: url(https://cdn-ak.f.st-hatena.com/images/fotolife/a/asahinet_tech/20181018/20181018104830.png) no-repeat right;background-size: auto auto;background-size: contain;}
+#blog-title-content{position:relative;text-align:left;color:#fff;font-family: 'Noto Sans JP', sans-serif;height:100%;background: url(https://cdn-ak.f.st-hatena.com/images/fotolife/a/asahinet_tech/20181018/20181018104830.png) no-repeat right;background-size: auto auto;background-size: contain;}
 #blog-title-content #title,
 #blog-title-content #blog-description,
 #blog-title-content #mainImg{position:absolute;margin:0;padding:0;}
 #blog-title-content #title{top:30%;left:5.7%;letter-spacing:0.02em;}
-#blog-title-content #blog-description{top:53.5%;left:5.7%; width: 24%;}
+#blog-title-content #blog-description{top:53.5%;left:5.7%; width: 23%;}
 #blog-title-content #mainImg{top:0;right:-2.7%;width:646px;}
 #blog-title-content #mainImg img{width:100%;}
 
