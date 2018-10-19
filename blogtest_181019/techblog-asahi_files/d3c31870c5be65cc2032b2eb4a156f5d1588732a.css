@@ -2968,7 +2968,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003894', end
 }
 
 #sp-suggest{
-  display:none;
+  display:none !important;
 
 }
 
