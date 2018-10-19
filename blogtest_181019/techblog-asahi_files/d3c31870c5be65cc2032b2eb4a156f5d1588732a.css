@@ -2966,3 +2966,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003894', end
   _:-ms-input-placeholder, :root #blog-title-content #blog-description{width:245px;}
 
 }
+
+#sp-suggest{
+  display:none;
+
+}
+
